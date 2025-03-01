@@ -350,7 +350,7 @@ At the end, it saves the model and a file with the extension ".md", with the mod
 
 <h6><b>Unsupervised</b><h6>
 
-<p align="justify">In this case, the algorithm is trained using unlabeled data. The goal is for the algorithm to find hidden patterns and structures in the data, without the need for predefined <answers class=""></answers></p>
+<p align="justify">In this case, the algorithm is trained using unlabeled data. The goal is for the algorithm to find hidden patterns and structures in the data, without the need for predefined answers. </p>
 
 <p align="justify">K-means - Clustering </p>
 <p align="justify">
