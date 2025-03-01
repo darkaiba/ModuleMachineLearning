@@ -83,92 +83,109 @@ At the end, it saves the model and a file with the extension ".md", with the mod
 <p align="justify">Logistic Regression - Classification</p>
 <p align="justify">
 <!--ts-->
+    
     penalty - Regularization type: 'l1', 'l2', 'elasticnet', 'none'
     C - Inverse of regularization strength
     solver - Algorithm for optimization: 'newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga'
     max_iter - Maximum number of iterations
     random_state - Seed for reproducibility
+    
 <!--te-->
 </p>
 
 <p align="justify">Decision Tree - Classification</p>
 <p align="justify">
 <!--ts-->
+    
     criterion - Function to measure the quality of a split: 'gini', 'entropy'
     max_depth - Maximum depth of the tree
     min_samples_split - Minimum number of samples needed to split a node
     min_samples_leaf - Minimum number of samples needed in a leaf
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Random Forests - Classification</p>
 <p align="justify">
 <!--ts-->
+
     n_estimators - Number of trees in the forest
     criterion - Function to measure the quality of a split: 'gini', 'entropy'
     max_depth - Maximum depth of each tree
     min_samples_split - Minimum number of samples needed to split a node
     min_samples_leaf - Minimum number of samples needed in a leaf
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Gradient Boosting - Classification</p>
 <p align="justify">
 <!--ts-->
+
     n_estimators - Number of boosting stages
     learning_rate - Learning rate
     max_depth - Maximum depth of each tree
     min_samples_split - Minimum number of samples needed to split a node
     min_samples_leaf - Minimum number of samples needed in a leaf
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Ada Boost - Classification</p>
 <p align="justify">
 <!--ts-->
-     n_estimators - Number of estimators
+
+    n_estimators - Number of estimators
      learning_rate - Learning rate
      algorithm - Algorithm: 'SAMME', 'SAMME.R'
      random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Naive Bayes - Classification</p>
 <p align="justify">
 <!--ts-->
+
     priors - Prior probabilities of the classes (if None, calculated from the data)
     var_smoothing - Smoothing parameter to avoid zero variance
+
 <!--te-->
 </p>
 
 <p align="justify">SVM (Support Vector Machine) - Classification</p>
 <p align="justify">
 <!--ts-->
+
     C - Regularization parameter
     kernel - Kernel type: 'linear', 'poly', 'rbf', 'sigmoid'
     degree - Degree of the polynomial kernel (only for 'poly' kernels)
     gamma - Kernel coefficient (only for 'rbf', 'poly', 'sigmoid' kernels)
     probability - Enables probability calculation
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">KNN (K-Nearest Neighbors) - Classification</p>
 <p align="justify">
 <!--ts-->
+
     n_neighbors - Number of neighbors
     weights - Neighbor weights: 'uniform', 'distance'
     algorithm - Algorithm for calculating neighbors: 'auto', 'ball_tree', 'kd_tree', 'brute'
     p - Minkowski distance parameter (1 for Manhattan, 2 for Euclidean)
+
 <!--te-->
 </p>
 
 <p align="justify">Decision Tree - Regression</p>
 <p align="justify">
 <!--ts-->
+
     criterion - Function to measure the quality of a split: 'squared_error', 'friedman_mse', 'absolute_error'
     splitter - Strategy to choose the split: 'best', 'random'
     max_depth - Maximum depth of the tree
@@ -176,12 +193,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     min_samples_leaf - Minimum number of samples in a leaf
     max_features - Maximum number of features considered for splitting
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Random Forests - Regression</p>
 <p align="justify">
 <!--ts-->
+
     n_estimators - Number of trees in the forest
     criterion - Function to measure the quality of a split
     max_depth - Maximum depth of each tree
@@ -190,12 +209,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     max_features - Maximum number of features considered for splitting
     bootstrap - If True, uses sampling with replacement
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Gradient Boosting - Regression</p>
 <p align="justify">
 <!--ts-->
+
     n_estimators - Number of boosting stages
     learning_rate - Learning rate
     loss - Loss function: 'squared_error', 'absolute_error', 'huber', 'quantile'
@@ -203,23 +224,27 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     min_samples_split - Minimum number of samples to split a node
     min_samples_leaf - Minimum number of samples in a leaf
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Ada Boost - Regression</p>
 <p align="justify">
 <!--ts-->
+
     base_estimator - Base estimator (if None, use DecisionTreeRegressor with max_depth=3)
     n_estimators - Number of estimators
     learning_rate - Learning rate
     loss - Loss function: 'linear', 'square', 'exponential'
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">SVM (Support Vector Machine) - Regression</p>
 <p align="justify">
 <!--ts-->
+
     kernel - Kernel type: 'linear', 'poly', 'rbf', 'sigmoid'
     degree - Degree of the polynomial kernel (only for 'poly' kernels)
     gamma - Kernel coefficient (only for 'rbf', 'poly', 'sigmoid' kernels)
@@ -228,12 +253,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     shrinking - If True, uses the shrinking heuristic to speed up training
     tol - Tolerance for stopping criterion
     max_iter - Maximum number of iterations (-1 = unlimited)
+
 <!--te-->
 </p>
 
 <p align="justify">Ridge - Regression</p>
 <p align="justify">
 <!--ts-->
+
     alpha - Regularization parameter (the higher, the stronger the regularization)
     fit_intercept - If True, calculates the intercept (bias)
     copy_X - If True, copies the input data
@@ -241,12 +268,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     tol - Tolerance for stopping criterion
     solver - Optimization algorithm: 'auto', 'svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga'
     random_state - Seed for reproducibility (used in 'sag' and 'saga')
+
 <!--te-->
 </p>
 
 <p align="justify">Elasticnet - Regression</p>
 <p align="justify">
 <!--ts-->
+
     alpha - Regularization parameter (combines L1 and L2)
     l1_ratio - Ratio between L1 and L2 (0 = Ridge, 1 = Lasso)
     fit_intercept - If True, compute the intercept (bias)
@@ -256,12 +285,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     warm_start - If True, reuse the previous solution as initialization
     positive - If True, force the coefficients to be positive
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Lasso - Regression</p>
 <p align="justify">
 <!--ts-->
+
     alpha - Regularization parameter (the larger, the stronger the regularization)
     fit_intercept - If True, compute the intercept (bias)
     precompute - If True, precompute the Gram matrix to speed up training
@@ -271,15 +302,18 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     warm_start - If True, reuse the previous solution as initialization
     positive - If True, force the coefficients to be positive
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Linear - Regression</p>
 <p align="justify">
 <!--ts-->
+
     fit_intercept - If True, calculates the intercept (bias)
     copy_X - If True, copies the input data (avoids modifying the original data)
     n_jobs - Number of jobs to parallelize (None = 1, -1 = all cores)
+
 <!--te-->
 </p>
 
@@ -290,23 +324,27 @@ At the end, it saves the model and a file with the extension ".md", with the mod
 <p align="justify">Label Propagation - Classification </p>
 <p align="justify">
 <!--ts-->
+
     kernel - Type of kernel used to calculate the similarity between samples
     n_neighbors - Number of neighbors
     max_iter - Maximum number of iterations
     tol - Tolerance for convergence
     n_jobs - Number of parallel jobs to execute the algorithm
+
 <!--te-->
 </p>
 
 <p align="justify">Label Spreading - Classification </p>
 <p align="justify">
 <!--ts-->
+
     kernel - Type of kernel used to calculate the similarity between samples
     n_neighbors - Number of neighbors
     alpha - Smoothing factor
     max_iter - Maximum number of iterations
     tol - Tolerance for convergence
     n_jobs - Number of parallel jobs to execute the algorithm
+
 <!--te-->
 </p>
 
@@ -317,98 +355,120 @@ At the end, it saves the model and a file with the extension ".md", with the mod
 <p align="justify">K-means - Clustering </p>
 <p align="justify">
 <!--ts-->
+
     n_clusters = Number of clusters
     init - Centroid initialization method
     n_init - Number of times the algorithm will be executed with different seeds
     max_iter - Maximum number of iterations
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Hierarchical clustering - Clustering </p>
 <p align="justify">
 <!--ts-->
+
     n_clusters - Number of clusters
     affinity - Distance metric (e.g. 'euclidean', 'manhattan', 'cosine')
     linkage - Linkage criterion (e.g. 'ward', 'complete', 'average', 'single')
+
 <!--te-->
 </p>
 
 <p align="justify"> DBSCAN (Density-Based Spatial Clustering of Applications with Noise) - Clustering </p>
 <p align="justify">
 <!--ts-->
+
     eps - Maximum distance between two points to be considered neighbors
     min_samples - Minimum number of points to form a cluster
     metric - Distance metric (e.g. 'euclidean', 'manhattan', 'cosine')
+
 <!--te-->
 </p>
 
 <p align="justify">GMM (Gaussian Mixture Model) - Clustering </p>
 <p align="justify">
 <!--ts-->
+
     n_components - Number of components (clusters)
     covariance_type - Type of covariance matrix (e.g. 'full', 'tied', 'diag', 'spherical')
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Spectral clustering - Clustering </p>
 <p align="justify">
 <!--ts-->
+
     n_clusters - Number of clusters
     affinity - Affinity matrix construction method (e.g. 'rbf', 'nearest_neighbors')
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">PCA (Principal Component Analysis) - Dimensionality Reduction </p>
 <p align="justify">
 <!--ts-->
+
     n_components - Number of principal components to retain
     whiten - If True, normalizes the principal components
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">LDA (Linear Discriminant Analysis) - Dimensionality Reduction </p>
 <p align="justify">
 <!--ts-->
+
     n_components - Número de componentes a serem retidos
+
 <!--te-->
 </p>
 
 <p align="justify">TSNE (t-distributed Stochastic Neighbor Embedding) - Dimensionality Reduction </p>
 <p align="justify">
 <!--ts-->
+
     n_components - Number of dimensions in the reduced space
     perplexity - Number of neighbors considered
     learning_rate - Learning rate
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">ISOMAP (Isometric Mapping) - Dimensionality Reduction </p>
 <p align="justify">
 <!--ts-->
+
     n_components - Number of dimensions in the reduced space
     n_neighbors - Number of neighbors to build the graph
+
 <!--te-->
 </p>
 
 <p align="justify">Factor Analysis - Dimensionality Reduction </p>
 <p align="justify">
 <!--ts-->
+
     n_components - Number of latent factors
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">NMF (Non-negative Matrix Factorization) - Dimensionality Reduction </p>
 <p align="justify">
 <!--ts-->
+
     n_components - Number of components
     init - Initialization method
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
@@ -419,6 +479,7 @@ At the end, it saves the model and a file with the extension ".md", with the mod
 <p align="justify">Perceptron - Classification</p>
 <p align="justify">
 <!--ts-->
+
     penalty - Regularization
     alpha - Regularization constant
     max_iter - Maximum number of iterations
@@ -426,12 +487,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     eta0 - Initial learning rate
     shuffle - Shuffle the data after each epoch
     random_state - Seed for reproducibility
+
 <!--te-->
 </p>
 
 <p align="justify">Som (Self Organization Maps) - Custering</p>
 <p align="justify">
 <!--ts-->
+
     map_size - Map size (10x10 neurons) (e.g. (10, 10))
     input_len - Number of features (data dimensions) (e.g. X.shape[1])
     sigma - Initial neighbor radius
@@ -439,12 +502,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     random_seed = Seed for reproducibility
     epoch - Number of training epochs
     power - False for this type of network
+
 <!--te-->
 </p>
 
 <p align="justify">MLP (Multilayer Perceptron) - Classification </p>
 <p align="justify">
 <!--ts-->
+
     hidden_layer_sizes - A hidden layer with neurons
     activation - Activation function
     solver - Optimization algorithm
@@ -454,12 +519,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     tol - Stopping tolerance
     random_state - Seed for reproducibility
     power - False for this type of network
+
 <!--te-->
 </p>
 
 <p align="justify">MLP (Multilayer Perceptron) - Regression </p>
 <p align="justify">
 <!--ts-->
+
     hidden_layer_sizes - A hidden layer with neurons
     activation - Activation function
     solver - Optimization algorithm
@@ -469,12 +536,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     tol - Stopping tolerance
     random_state - Seed for reproducibility
     power - False for this type of network
+
 <!--te-->
 </p>
 
 <p align="justify">DNN (Deep Neural Network) - Classification </p>
 <p align="justify">
 <!--ts-->
+
     n_camadas - number of layers
     activation_enter - Input layer activation function (string: 'tanh', 'relu', 'sigmoid', etc.)
     n_neuronio_enter - Number of input neurons, usually the number of data that is passed
@@ -489,12 +558,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     epoch - Number of training epochs
     batch_size - number of samples that will be processed in each training iteration
     power - True for this type of network
+
 <!--te-->
 </p>
 
 <p align="justify">DNN (Deep Neural Network) - Regression </p>
 <p align="justify">
 <!--ts-->
+
     n_camadas - number of layers
     activation_enter - Input layer activation function
     n_neuronio_enter - Number of input neurons, usually the number of data passed
@@ -509,12 +580,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     epoch - Number of training epochs
     batch_size - number of samples that will be processed in each training iteration
     power - True for this type of network
+
 <!--te-->
 </p>
 
 <p align="justify">CNN (Convolutional Neural Network) - Classification </p>
 <p align="justify">
 <!--ts-->
+
     n_camadas - number of layers
     activation_enter - Input layer activation function (string: 'tanh', 'relu', 'sigmoid', etc.)
     n_neuronio_enter - Number of input neurons, usually the number of data that is passed
@@ -533,12 +606,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     epoch - Number of training epochs
     batch_size - number of samples that will be processed in each training iteration
     power - True for this type of network
+
 <!--te-->
 </p>
 
 <p align="justify">CNN (Convolutional Neural Network) - Regression </p>
 <p align="justify">
 <!--ts-->
+
     n_camadas - number of layers
     activation_enter - Input layer activation function (string: 'tanh', 'relu', 'sigmoid', etc.)
     n_neuronio_enter - Number of input neurons, usually the number of data that is passed
@@ -557,12 +632,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     epoch - Number of training epochs
     batch_size - number of samples that will be processed in each training iteration
     power - True for this type of network
+
 <!--te-->
 </p>
 
 <p align="justify">RNN (Recurrent Neural Network) - Classification </p>
 <p align="justify">
 <!--ts-->
+
     n_camadas - number of layers
     return_sequences_enter - Return sequences in the input layer (boolean: True or False)
     return_sequences_intermediate - Return sequences in the intermediate layers (boolean: True or False)
@@ -579,12 +656,14 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     epoch - Number of training epochs
     batch_size - number of samples that will be processed in each training iteration
     power - True for this type of network
+
 <!--te-->
 </p>
 
 <p align="justify">RNN (Recurrent Neural Network) - Regression </p>
 <p align="justify">
 <!--ts-->
+
     n_camadas - number of layers
     return_sequences_enter - Return sequences in the input layer (boolean: True or False)
     return_sequences_intermediate - Return sequences in the intermediate layers (boolean: True or False)
@@ -601,6 +680,7 @@ At the end, it saves the model and a file with the extension ".md", with the mod
     epoch - Number of training epochs
     batch_size - number of samples that will be processed in each training iteration
     power - True for this type of network
+
 <!--te-->
 </p>
 
@@ -611,7 +691,8 @@ At the end, it saves the model and a file with the extension ".md", with the mod
 
 <p align="justify">
 <!--ts-->
-      {
+
+    {
             "input_file": True,
             "learning": "network",
             "reading":{
@@ -657,6 +738,7 @@ At the end, it saves the model and a file with the extension ".md", with the mod
                 }
             }
       }
+
 <!--te-->
 </p>
 
