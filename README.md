@@ -16,7 +16,7 @@ To Execute, run the main.py file and pass a json with the following parameters w
 
 <p align="justify">
 <!--ts-->
-    {
+    ```{
         "input_file": None,                            ---> Mandatory. Accepts values as True or False (None).
         "learning": None,                              ---> Mandatory. Accepts values as supervised, semisupervised, unsupervised or network.
         "reading":{                                    ---> Mandatory. 
