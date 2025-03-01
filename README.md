@@ -56,7 +56,7 @@ To Execute, run the main.py file and pass a json with the following parameters w
                 HERE YOU PASS THE CONFIGURATIONS OF EACH ALGORITHM. IT IS EXPLAINED IN ALGORITHM SETTINGS.
             }
         }
-    }
+    }```
 <!--te-->
 </p>
 
