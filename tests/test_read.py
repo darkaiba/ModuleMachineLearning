@@ -15,7 +15,7 @@ class TestDataReaderRemote(unittest.TestCase):
                 "host": "example.com",
                 "user": "user",
                 "password": "password",
-                "caminho": 'C:\\Users\\ph_li\\PycharmProjects\\qfw_machine_learning\\.venv\\datasets',
+                "caminho": 'C:\\Documents',
                 "nome_arquivo": "iris_dataset_csv.csv"
             }
         }
@@ -46,7 +46,7 @@ class TestDataReaderRemote(unittest.TestCase):
                 "host": "example.com",
                 "user": "user",
                 "password": "password",
-                "caminho": 'C:\\Users\\ph_li\\PycharmProjects\\qfw_machine_learning\\.venv\\datasets',
+                "caminho": 'C:\\Documents',
                 "nome_arquivo": "data.invalid"
             }
         }
@@ -61,21 +61,21 @@ class TestDataReaderFile(unittest.TestCase):
         self.config_csv = {
             "reading": {
                 "reading_mode": TypeFile.CSV,
-                "caminho": 'C:\\Users\\ph_li\\PycharmProjects\\qfw_machine_learning\\.venv\\datasets',
+                "caminho": 'C:\\Documents',
                 "nome_arquivo": "iris_dataset_csv.csv"
             }
         }
         self.config_json = {
             "reading": {
                 "reading_mode": TypeFile.JSON,
-                "caminho": 'C:\\Users\\ph_li\\PycharmProjects\\qfw_machine_learning\\.venv\\datasets',
+                "caminho": 'C:\\Documents',
                 "nome_arquivo": "iris_dataset_json.json"
             }
         }
         self.config_parquet = {
             "reading": {
                 "reading_mode": TypeFile.PARQUET,
-                "caminho": 'C:\\Users\\ph_li\\PycharmProjects\\qfw_machine_learning\\.venv\\datasets',
+                "caminho": 'C:\\Documents',
                 "nome_arquivo": "iris_dataset_parquet.parquet"
             }
         }
@@ -133,7 +133,7 @@ class TestDataReaderFile(unittest.TestCase):
         invalid_config = {
             "reading": {
                 "reading_mode": "invalid_type",
-                "caminho": "C:\\Users\\ph_li\\PycharmProjects\\qfw_machine_learning\\.venv\\datasets",
+                "caminho": "C:\\Documents",
                 "nome_arquivo": "data.invalid"
             }
         }
