@@ -16,7 +16,7 @@ class TestSemiSupervised(unittest.TestCase):
                 "host": None,
                 "user": None,
                 "password": None,
-                "caminho": 'C:\\Users\\ph_li\\PycharmProjects\\qfw_machine_learning\\.venv\\datasets',
+                "caminho": 'C:\\Documents',
                 "nome_arquivo": 'iris.json',
                 "database": None,
                 "type_database": None,
